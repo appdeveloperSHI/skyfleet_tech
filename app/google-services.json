@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "597337973203",
+    "project_id": "skyfleettech",
+    "storage_bucket": "skyfleettech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597337973203:android:f681c0d232f60700b58f26",
+        "android_client_info": {
+          "package_name": "com.sky.SkyFleetDriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597337973203-rti4ubl78gqqs41utggr4p3ed3gsbldl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sky.SkyFleetDriver",
+            "certificate_hash": "334ad90c680c246c7091434afc98dc6ebc71c9d9"
+          }
+        },
+        {
+          "client_id": "597337973203-1t9s4h4p0cop6od9nmnm66lbfa38m44j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbsRg6t6UzYtJ5ygtl0_z4m9V8yv_HHDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597337973203-1t9s4h4p0cop6od9nmnm66lbfa38m44j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

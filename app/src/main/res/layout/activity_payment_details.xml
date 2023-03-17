@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/scrol" android:fillViewport="true" android:background="@color/colorGrey" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <ScrollView-->
+
+
+    <!-- android:layout_width="match_parent"-->
+
+
+    <!-- android:layout_height="match_parent">-->
+
+
+
+    -<RelativeLayout android:background="@drawable/border" android:layout_height="match_parent" android:layout_width="match_parent" android:padding="10dp">
+
+
+    -<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/l1" android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="10dp">
+
+    <TextView android:id="@+id/order_id" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginStart="10dp" app:layout_constraintTop_toTopOf="parent" app:layout_constraintRight_toRightOf="parent" android:textStyle="bold" android:textSize="12sp" android:textColor="@color/black" android:text="order Id 174z" android:gravity="center_horizontal" android:layout_marginTop="10dp" android:layout_marginLeft="10dp"/>
+
+    <TextView android:id="@+id/date" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintRight_toRightOf="parent" android:textSize="10sp" android:text="09/08/2021" android:layout_marginTop="5dp" app:layout_constraintTop_toBottomOf="@+id/order_id"/>
+
+
+    -<RelativeLayout android:id="@+id/rl1" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:layout_margin="10dp">
+
+    <ImageView android:id="@+id/img1" android:layout_height="25dp" android:layout_width="25dp" android:src="@drawable/tataace"/>
+
+    <TextView android:id="@+id/vehicle" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginStart="10dp" android:textColor="@color/black" android:text="" android:layout_marginLeft="10dp" android:layout_toEndOf="@+id/img1" android:layout_toRightOf="@+id/img1" android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+
+    -<RelativeLayout android:id="@+id/rl2" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toBottomOf="@+id/rl1" app:layout_constraintLeft_toLeftOf="parent" android:layout_margin="10dp">
+
+    <ImageView android:id="@+id/img2" android:layout_height="25dp" android:layout_width="25dp" android:src="@drawable/distance"/>
+
+    <TextView android:id="@+id/total_distance" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginStart="10dp" android:textColor="@color/black" android:text="" android:layout_marginLeft="10dp" android:layout_toEndOf="@+id/img2" android:layout_toRightOf="@+id/img2" android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+
+    -<RelativeLayout android:id="@+id/rl3" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toBottomOf="@+id/rl2" app:layout_constraintLeft_toLeftOf="parent" android:layout_margin="10dp">
+
+    <ImageView android:id="@+id/img3" android:layout_height="25dp" android:layout_width="25dp" android:src="@drawable/times"/>
+
+    <TextView android:id="@+id/total_time" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginStart="10dp" android:textColor="@color/black" android:text="" android:layout_marginLeft="10dp" android:layout_toEndOf="@+id/img3" android:layout_toRightOf="@+id/img3" android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+    <TextView android:id="@+id/amount" android:background="@drawable/button_round" android:layout_height="40dp" android:layout_width="150dp" android:padding="3dp" app:layout_constraintRight_toRightOf="parent" android:textStyle="bold" android:textColor="@color/white" android:text="" android:gravity="center" android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/rl3" android:layout_marginEnd="20dp" android:layout_marginBottom="5dp" android:layout_marginRight="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View android:id="@+id/view1" android:background="@color/colorGrey" android:layout_height="1dp" android:layout_width="match_parent" android:layout_margin="10dp" android:layout_below="@+id/l1"/>
+
+    <!-- <ImageView-->
+
+
+    <!-- android:layout_below="@+id/view1"-->
+
+
+    <!-- android:id="@+id/distance_icon"-->
+
+
+    <!-- android:layout_width="11dp"-->
+
+
+    <!-- android:layout_height="65dp"-->
+
+
+    <!-- android:src="@drawable/distanceicon"/>-->
+
+
+
+    -<LinearLayout android:id="@+id/l2" android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="10dp" android:layout_below="@+id/view1" android:orientation="vertical">
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Pickup address :"/>
+
+    <TextView android:id="@+id/pickup_address" android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/black" android:text=" "/>
+
+</LinearLayout>
+
+    <!-- <TextView-->
+
+
+    <!-- android:layout_width="match_parent"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_marginTop="10dp"-->
+
+
+    <!-- android:text="via : Redhills,Chennai-6000052"-->
+
+
+    <!-- />-->
+
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Drop_address :"/>
+
+    <TextView android:id="@+id/drop_address" android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/black" android:text=""/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <View android:id="@+id/view2" android:background="@color/colorGrey" android:layout_height="1dp" android:layout_width="match_parent" android:layout_margin="5dp" android:layout_below="@+id/l2"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="10dp" app:layout_constraintTop_toTopOf="parent" android:layout_below="@+id/view2" android:orientation="vertical" app:layout_constraintStart_toStartOf="parent">
+
+
+    -<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:id="@+id/baseFair" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="Base Fair " android:layout_marginTop="10dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <TextView android:id="@+id/basefair_rs" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="" android:layout_marginTop="10dp" android:layout_alignParentEnd="true" android:layout_alignParentRight="true"/>
+
+    <View android:background="@color/white" android:layout_height="1dp" android:layout_width="match_parent" android:layout_marginTop="5dp" android:layout_marginLeft="15dp" android:layout_marginBottom="5dp" android:layout_marginRight="15dp" android:layout_below="@+id/baseFair"/>
+
+    <!-- <ImageView-->
+
+
+    <!-- android:layout_width="match_parent"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_below="@+id/baseFair"-->
+
+
+    <!-- android:layout_marginTop="5dp"-->
+
+
+    <!-- android:layout_marginBottom="5dp"-->
+
+
+    <!-- android:layout_marginLeft="15dp"-->
+
+
+    <!-- android:layout_marginRight="15dp"-->
+
+
+    <!-- android:src="@drawable/line" />-->
+
+
+</RelativeLayout>
+
+
+    -<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:id="@+id/extra_distance" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="Extra distance Charge For" android:layout_marginTop="10dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <TextView android:id="@+id/extra_distance_rs" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="" android:layout_marginTop="10dp" android:layout_alignParentEnd="true" android:layout_alignParentRight="true"/>
+
+    <View android:background="@color/white" android:layout_height="1dp" android:layout_width="match_parent" android:layout_marginTop="5dp" android:layout_marginLeft="15dp" android:layout_marginBottom="5dp" android:layout_marginRight="15dp" android:layout_below="@+id/extra_distance"/>
+
+    <!-- <ImageView-->
+
+
+    <!-- android:layout_width="match_parent"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_below="@+id/extra_distance"-->
+
+
+    <!-- android:layout_marginTop="5dp"-->
+
+
+    <!-- android:layout_marginBottom="5dp"-->
+
+
+    <!-- android:layout_marginLeft="15dp"-->
+
+
+    <!-- android:layout_marginRight="15dp"-->
+
+
+    <!-- android:src="@drawable/line" />-->
+
+
+</RelativeLayout>
+
+
+    -<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:id="@+id/extra_tim" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="Extra Time Charge For" android:layout_marginTop="10dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <TextView android:id="@+id/extra_time_rs" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="" android:layout_marginTop="10dp" android:layout_alignParentEnd="true" android:layout_alignParentRight="true"/>
+
+    <!-- <ImageView-->
+
+
+    <!-- android:layout_width="match_parent"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_below="@+id/extra_time"-->
+
+
+    <!-- android:layout_marginTop="5dp"-->
+
+
+    <!-- android:layout_marginLeft="15dp"-->
+
+
+    <!-- android:layout_marginRight="15dp"-->
+
+
+    <!-- android:layout_marginBottom="5dp"-->
+
+
+    <!-- android:src="@drawable/line" />-->
+
+
+</RelativeLayout>
+
+
+    -<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="5dp" android:layout_marginTop="10dp">
+
+    <View android:id="@+id/v1" android:background="@color/colorGrey" android:layout_height="1dp" android:layout_width="match_parent" android:layout_marginTop="5dp" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_marginRight="5dp"/>
+
+    <TextView android:id="@+id/totalPrice" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/black" android:text="Total order Fair" android:layout_marginTop="10dp" android:layout_below="@+id/v1"/>
+
+    <TextView android:id="@+id/total_rs" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/colorGreen" android:text="" android:layout_marginTop="10dp" android:layout_below="@+id/v1" android:layout_alignParentEnd="true" android:layout_alignParentRight="true"/>
+
+    <!-- <View-->
+
+
+    <!-- android:layout_width="match_parent"-->
+
+
+    <!-- android:layout_height="1dp"-->
+
+
+    <!-- android:layout_below="@+id/totalPrice"-->
+
+
+    <!-- android:layout_marginTop="5dp"-->
+
+
+    <!-- android:background="@color/colorGrey"-->
+
+
+    <!-- />-->
+
+
+</RelativeLayout>
+
+
+    -<RelativeLayout android:id="@+id/report" android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="2dp" android:layout_marginTop="10dp">
+
+    <TextView android:id="@+id/txt_report" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/colorPrimary" android:text="If you receive less amount" android:layout_marginTop="10dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <ImageView android:id="@+id/img_report" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginStart="10dp" android:layout_marginTop="3dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_report_problem" android:layout_toEndOf="@+id/txt_report" android:layout_toRightOf="@+id/txt_report"/>
+
+    <!-- <ImageView-->
+
+
+    <!-- android:layout_width="match_parent"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_below="@+id/extra_time"-->
+
+
+    <!-- android:layout_marginTop="5dp"-->
+
+
+    <!-- android:layout_marginLeft="15dp"-->
+
+
+    <!-- android:layout_marginRight="15dp"-->
+
+
+    <!-- android:layout_marginBottom="5dp"-->
+
+
+    <!-- android:src="@drawable/line" />-->
+
+
+</RelativeLayout>
+
+    <!-- <EditText-->
+
+
+    <!-- android:id="@+id/ed_amount"-->
+
+
+    <!-- android:layout_width="250dp"-->
+
+
+    <!-- android:layout_height="50dp"-->
+
+
+    <!-- android:layout_above="@+id/amount_received"-->
+
+
+    <!-- android:layout_alignParentStart="true"-->
+
+
+    <!-- android:layout_alignParentLeft="true"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentRight="true"-->
+
+
+    <!-- android:inputType="number"-->
+
+
+    <!-- android:layout_marginStart="50dp"-->
+
+
+    <!-- android:layout_marginLeft="50dp"-->
+
+
+    <!-- android:layout_marginEnd="50dp"-->
+
+
+    <!-- android:layout_marginRight="50dp"-->
+
+
+    <!-- android:layout_marginBottom="115dp"-->
+
+
+    <!-- android:hint="Enter Amount" />-->
+
+
+    <!-- <EditText-->
+
+
+    <!-- android:id="@+id/ed_remark"-->
+
+
+    <!-- android:layout_width="250dp"-->
+
+
+    <!-- android:layout_height="50dp"-->
+
+
+    <!-- android:layout_above="@+id/amount_received"-->
+
+
+    <!-- android:layout_alignParentStart="true"-->
+
+
+    <!-- android:layout_alignParentLeft="true"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentRight="true"-->
+
+
+    <!-- android:layout_marginStart="50dp"-->
+
+
+    <!-- android:layout_marginLeft="50dp"-->
+
+
+    <!-- android:layout_marginTop="57dp"-->
+
+
+    <!-- android:layout_marginEnd="50dp"-->
+
+
+    <!-- android:layout_marginRight="50dp"-->
+
+
+    <!-- android:layout_marginBottom="58dp"-->
+
+
+    <!-- android:hint="Remarks" />-->
+
+
+
+    -<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/amount_received" android:background="@drawable/button_round_green" android:layout_height="50dp" android:layout_width="180dp" android:padding="3dp" android:layout_marginTop="20dp" android:layout_marginBottom="30dp" android:layout_alignParentEnd="true" android:layout_alignParentRight="true" android:layout_gravity="center">
+
+    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/pay_btn" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" android:textSize="14sp" android:textColor="#FFFFFF" android:text="Amount Received" android:gravity="center_horizontal" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textAlignment="center"/>
+
+    <ImageView android:background="@drawable/keyboard_arrow" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="5dp" android:layout_marginRight="5dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@+id/pay_btn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

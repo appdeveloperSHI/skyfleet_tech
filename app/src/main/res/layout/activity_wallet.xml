@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+<!--        <TextView-->
+<!--            android:id="@+id/hand_amount"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="RS 18000"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </TextView>-->
+
+        <TextView
+            android:id="@+id/cash_amount"
+            android:background="@drawable/button_round"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:padding="14dp"
+            android:textColor="@color/white"
+            android:text="Cash out RS 1200.00"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="20dp"
+
+        android:layout_weight="1" />
+
+</RelativeLayout>

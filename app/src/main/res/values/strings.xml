@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <string name="app_name">Skyfleet Driver</string>
+
+    <string name="login">Login</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <!-- <string name="google_maps_api_key">AIzaSyDpU4zmEqn0xANaGNqYY-L-eu5dwiVM8HM</string>-->
+
+
+    <!-- <string name="google_maps_api_key">AIzaSyAGlR9v4nTU3LwxyseaoAsCvppaBWQoJA0</string>-->
+
+
+    <!-- <string name="google_maps_api_key">AIzaSyAH9ybn79L63QWCHZE_WMlhU1eYLeymYjA</string>-->
+
+
+    <string name="google_maps_api_key">AIzaSyDj5UKV1rnWmlB_5Jr-OBIfZJ5SgJ-5R9I</string>
+    //test key
+    <!-- <string name="google_maps_api_key">AIzaSyDh4CFQdOYdOpjSM4A1Y-lwcMGYJbK8SmA</string>-->
+
+
+    <string name="login_with_otp_text">LogIn with OTP</string>
+
+    <string name="otp_description">OTP has been sent to customer mobile number. Please verify</string>
+
+    <string name="otp_title">Verification Code</string>
+
+    <string name="verify_text">Verify</string>
+
+    <string name="resend_otp_text">Resend OTP</string>
+
+    <string name="sign_up_title_text">Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="call">Call</string>
+
+    <string name="no_jobs_found_at_the_moment">No Jobs found at the moment.</string>
+
+    <string name="navigate">Navigate</string>
+
+    <string name="_266_apple">266 ,Apple</string>
+
+    <string name="dropoff">dropoff :</string>
+
+    <string name="pickup">Pickup :</string>
+
+    <string name="cod">COD</string>
+
+    <string name="_28_00">28.00</string>
+
+    <string name="processing_on_oct_08_2021">Processing on oct 08 2021</string>
+
+    <string name="order_id_123456">order Id #123456</string>
+
+    <string name="currrent_status">Currrent Status:</string>
+
+    <string name="attached_vehicle">Attached Vehicle</string>
+
+    <string name="your_current_location">Your Current Location</string>
+
+    <string name="currency"> \u20B9 </string>
+
+
+    -<string-array name="job_array">
+
+    <item>Completed Jobs</item>
+
+    <item>Rejected Jobs</item>
+
+    <item>Cancelled Jobs</item>
+
+</string-array>
+
+</resources>

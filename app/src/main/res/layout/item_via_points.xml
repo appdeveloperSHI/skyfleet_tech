@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viapts_adapter"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/completed"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:paddingBottom="3dp"
+        android:drawablePadding="8dp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/via_lable"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingBottom="3dp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/colorGrey"
+        android:text=" "
+        android:paddingTop="3dp"
+        android:paddingStart="15dp"/>
+
+    <TextView
+        android:id="@+id/via_address"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingBottom="3dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:paddingTop="3dp"
+        android:paddingStart="10dp"
+        android:lineSpacingExtra="3dp"/>
+
+</LinearLayout>

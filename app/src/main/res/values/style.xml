@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <resources>
+
+
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="AppTheme">
+
+    <!-- Customize your theme here. -->
+
+
+    <item name="fontFamily">@font/coresans_cr_regular</item>
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    <item name="colorAccent">@color/colorAccent</item>
+
+</style>
+
+
+    -<style parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme1">
+
+    <!-- Customize your theme here. -->
+
+
+    <item name="fontFamily">@font/coresans_cr_regular</item>
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    <item name="colorAccent">@color/colorAccent</item>
+
+</style>
+
+</resources>

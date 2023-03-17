@@ -1,0 +1,31 @@
+package com.sky.SkyFleetDriver.model
+
+data class Rider(
+    val a_status: String,
+    val accept: String,
+    val batchtype: String,
+    val bloodgroup: String,
+    val complete: String,
+    val createdon: String,
+    val current_address: String,
+    val deletes: String,
+    val device_id: String,
+    val dob: String,
+    val email: String,
+    val id: String,
+    val is_vehicle: String,
+    val joindate: Any,
+    val license_type: String,
+    val licenseexpiry: String,
+    val licenseno: String,
+    val mobile: String,
+    val name: String,
+    val password: String,
+    val permanant_address: String,
+    val photo_url: String,
+    val reject: String,
+    val releivingdate: Any,
+    val status: String,
+    val username: String,
+    val vehicle: String
+)

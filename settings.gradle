@@ -1,0 +1,2 @@
+rootProject.name = "skyfleet_tech"
+include ':app'

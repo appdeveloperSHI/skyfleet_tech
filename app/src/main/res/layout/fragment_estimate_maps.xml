@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--&lt;!&ndash;    <data>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <variable&ndash;&gt;-->
+<!--&lt;!&ndash;            name="my_view_model"&ndash;&gt;-->
+<!--&lt;!&ndash;            type="com.skyfleetexpress.viewmodel.BookingViewModel" />&ndash;&gt;-->
+<!--&lt;!&ndash;    </data>&ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toTopOf="@+id/estimatedValuesContainer"&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <androidx.fragment.app.FragmentContainerView&ndash;&gt;-->
+<!--            <androidx.fragment.app.FragmentContainerView-->
+<!--                android:id="@+id/map"-->
+<!--                android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.0"-->
+<!--                 />-->
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressBar"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/map"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias=".3"-->
+<!--                tools:visibility="visible" />-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/estimatedValuesContainer"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/white"-->
+<!--                android:paddingStart="@dimen/margin_small"-->
+<!--                android:paddingEnd="@dimen/margin_small"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                tools:visibility="visible">-->
+
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/estimate_fare_dialog_bg"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/heading"-->
+<!--                        style="@style/text_style_heading"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/estimate_text_upper_corner_bg"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingTop="@dimen/padding_small"-->
+<!--                        android:paddingBottom="@dimen/padding_small"-->
+<!--                        android:text="Estimate Fare"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/driverBata"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center|start"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="@dimen/margin_medium"-->
+<!--                        android:layout_marginBottom="@dimen/margin_medium"-->
+<!--                        android:text="Distance :"-->
+<!--                        android:textColor="@color/red"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/heading"-->
+<!--                        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/bata"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:layout_constraintBaseline_toBaselineOf="@id/driverBata"-->
+<!--                        app:layout_constraintStart_toStartOf="@+id/allottedTime"-->
+<!--                        tools:text="500 hrs" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/unit"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="end"-->
+<!--                        android:text="Extra charge per km :"-->
+<!--                        android:textColor="@color/red"-->
+<!--                        app:layout_constraintBaseline_toBaselineOf="@+id/driverBata"-->
+<!--                        app:layout_constraintStart_toStartOf="@+id/extraChargeTitle" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/amount"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        app:layout_constraintBaseline_toBaselineOf="@+id/unit"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        tools:text="Rs. 100" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/allottedTimeTitle"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="Allotted Time: "-->
+<!--                        android:textColor="@color/red"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/driverBata" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/allottedTime"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/margin_extra_small"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="10 hrs"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/allottedTimeTitle"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/bata" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/extraChargeTitle"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="23dp"-->
+<!--                        android:text="Extra charge per hour :"-->
+<!--                        android:textColor="@color/red"-->
+<!--                        app:layout_constraintEnd_toStartOf="@+id/extraCharge"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/unit" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/extraCharge"-->
+<!--                        style="@style/text_style_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:layout_constraintBaseline_toBaselineOf="@+id/extraChargeTitle"-->
+<!--                        app:layout_constraintStart_toStartOf="@+id/amount"-->
+<!--                        tools:text="Rs. 49" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/totalPrice"-->
+<!--                        style="@style/text_style_title"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:background="@drawable/estimate_text_bg"-->
+<!--                        android:padding="@dimen/padding_small"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintHorizontal_bias="0.5"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/extraChargeTitle"-->
+<!--                        app:layout_constraintVertical_bias="0.0"-->
+<!--                        tools:text="Rs. 5000" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/payment_label"-->
+<!--                        style="@style/text_style_title"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/payment_title"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/totalPrice" />-->
+
+<!--                    <RadioGroup-->
+<!--                        android:id="@+id/radioGroup"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/margin_small"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/payment_label">-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/cash"-->
+<!--                            style="@style/text_style_normal"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="@dimen/margin_medium"-->
+<!--                            android:layout_marginEnd="@dimen/margin_Extra_large"-->
+<!--                            android:checked="true"-->
+<!--                            android:text="Cash on Delivery"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/atom"-->
+<!--                            style="@style/text_style_normal"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Atom pay"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </RadioGroup>-->
+
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/buttonCancel"-->
+<!--                        style="@style/ButtonTheme"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="28dp"-->
+<!--                        android:layout_marginTop="@dimen/margin_large"-->
+<!--                        android:layout_marginBottom="32dp"-->
+<!--                        android:backgroundTint="@color/heading_red"-->
+<!--                        android:text="@string/cancel_buttton_text"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/radioGroup" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/buttonConfirm"-->
+<!--                        style="@style/ButtonTheme"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/confirm_button_text"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        app:layout_constraintBaseline_toBaselineOf="@+id/buttonCancel"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintHorizontal_bias="0.845"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/buttonCancel" />-->
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </FrameLayout>-->
+<!--</layout>-->
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+

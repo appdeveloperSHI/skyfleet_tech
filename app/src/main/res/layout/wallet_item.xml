@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_below="@+id/linear"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:text="Mar \nfriday\n6 "
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+    </TextView>
+    <TextView
+        android:id="@+id/name"
+        android:text="Name1"
+        android:layout_toRightOf="@+id/date"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/address"
+        android:text="Avadi to Annanagar \nTiming 1:30 hrs"
+        android:layout_toRightOf="@+id/date"
+        android:layout_below="@+id/name"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/rs"
+        android:text="Rs 200"
+        android:textSize="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGrey"
+        android:layout_below="@+id/address"/>
+<!--    <TextView-->
+<!--        android:id="@+id/process"-->
+<!--        android:text="Processing"-->
+<!--        android:textSize="10dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_below="@+id/rs"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </TextView>-->
+</RelativeLayout>

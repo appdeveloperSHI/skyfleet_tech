@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/item_textview" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" android:paddingStart="5dp" android:layout_marginTop="5dp" android:id="@+id/via_rv"/>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" app:layout_constraintTop_toBottomOf="@+id/via_rv" android:orientation="vertical">
+
+    <TextView
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:id="@+id/destination"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="3dp"
+        android:lineSpacingExtra="3dp"
+        android:gravity="center_vertical"/>
+
+    <View android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorGrey"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/destination"/>
+
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

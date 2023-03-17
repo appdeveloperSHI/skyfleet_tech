@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:gravity="center|left"
+    android:animationCache="true"
+    android:animateLayoutChanges="true"
+    android:id="@+id/pending_card"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:layout_height="wrap_content"
+    android:minHeight="200dp"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="?android:attr/selectableItemBackground">
+
+
+    -<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_weight="1">
+
+
+    -<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_weight="1">
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/txt_oderid"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/colorBalck"
+        android:text="Inquiry #123456"/>
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/txt_dateandstatus"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBalck"
+        android:text="Processd on july 24 2021"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="80dp">
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/txt_pricetotla"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/colorGreen" android:text="28.00" android:textStyle="bold" android:layout_gravity="center"/>
+
+    <TextView android:padding="5dp" android:gravity="center" android:id="@+id/txt_type" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="14dp" android:textColor="@color/colorBalck" android:text="COD" android:layout_gravity="center"/>
+
+</LinearLayout>
+
+    <!-- butterknife error-->
+
+
+    <!-- <LinearLayout-->
+
+
+    <!-- android:id="@+id/lvl_click"-->
+
+
+    <!-- android:layout_width="55dp"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_gravity="center"-->
+
+
+    <!-- android:background="?android:attr/selectableItemBackgroundBorderless"-->
+
+
+    <!-- android:gravity="center"-->
+
+
+    <!-- android:visibility="gone">-->
+
+
+    <!-- <ImageView-->
+
+
+    <!-- android:id="@+id/img_right"-->
+
+
+    <!-- android:layout_width="35dp"-->
+
+
+    <!-- android:layout_marginTop="15dp"-->
+
+
+    <!-- android:layout_height="38dp"-->
+
+
+    <!-- android:background="@drawable/rights" />-->
+
+
+    <!-- </LinearLayout>-->
+
+
+    <!-- <ImageView-->
+
+
+    <!-- android:id="@+id/img_right"-->
+
+
+    <!-- android:layout_width="35dp"-->
+
+
+    <!-- android:layout_marginTop="15dp"-->
+
+
+    <!-- android:layout_height="38dp"-->
+
+
+    <!-- android:background="@drawable/rights" />-->
+
+
+    <!-- <ImageView-->
+
+
+    <!-- android:id="@+id/img_right"-->
+
+
+    <!-- android:layout_width="15dp"-->
+
+
+    <!-- android:layout_height="15dp"-->
+
+
+    <!-- android:layout_margin="10dp"-->
+
+
+    <!-- android:background="@drawable/arrow" />-->
+
+
+</LinearLayout>
+
+
+    -<LinearLayout android:orientation="vertical" android:animationCache="true" android:animateLayoutChanges="true" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="2" android:visibility="visible">
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp">
+
+    <TextView android:padding="2dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="17dp" android:textColor="@color/colorGreen" android:text="Pickup :" android:drawablePadding="8dp"/>
+
+    <TextView android:padding="3dp" android:id="@+id/Pickup_address" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="266 ,Apple " android:textStyle="bold"/>
+
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/via_rv" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" tools:listitem="@layout/item_via_points" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp">
+
+    <TextView android:padding="2dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="17dp" android:textColor="@color/colorPrimary" android:text="dropoff :" android:drawablePadding="8dp"/>
+
+    <TextView android:padding="3dp" android:id="@+id/drop_address" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="266 ,Apple " android:textStyle="bold"/>
+
+</LinearLayout>
+
+    <com.kofigyan.stateprogressbar.StateProgressBar android:id="@+id/time_view" android:layout_height="55dp" android:layout_width="match_parent" android:layout_marginTop="10dp" app:spb_stateNumberForegroundColor="#eeeeee" app:spb_stateNumberBackgroundColor="#808080" app:spb_stateForegroundColor="#3DBA42" app:spb_stateDescriptionColor="#808080" app:spb_stateBackgroundColor="#BDBDBD" app:spb_maxStateNumber="three" app:spb_stateDescriptionSize="12dp" app:spb_stateTextSize="12dp" app:spb_currentStateNumber="two" app:spb_currentStateDescriptionColor="#3DBA42" app:spb_checkStateCompleted="true" app:spb_animateToCurrentProgressState="true"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <View android:layout_margin="10dp" android:layout_height="1dp" android:layout_width="match_parent" android:background="@color/colorGrey" android:layout_marginTop="10dp"/>
+
+</LinearLayout>
